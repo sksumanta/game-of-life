@@ -419,6 +419,18 @@
                     </plugin>
                 </plugins>
             </build>
+         <distributionmanagement>
+            <repository>
+                <id>release</id>
+                <name>my_releases_repo</name>
+                <url>http://192.168.9.141:8081/nexus2/content/repositories/my_releases_repo</url> 
+            </repository>
+            <snapshotRepository>
+                  <id>snapshots</id>
+                  <name>my_releases_snapshots</name>
+                  <url>http://192.168.9.141:8081/nexus2/content/repositories/my_releases_snapshots</url> 
+            </snapshotRepository> 
+        </distributionmanagement>
             <reporting>
                 <plugins>
                     <plugin>
@@ -493,18 +505,7 @@
                     </plugin>
                 </plugins>
             </reporting>
-             <distributionmanagement>
-            <repository>
-                <id>release</id>
-                <name>my_releases_repo</name>
-                <url>http://192.168.9.141:8081/nexus2/content/repositories/my_releases_repo</url> 
-            </repository>
-            <snapshotRepository>
-                  <id>snapshots</id>
-                  <name>my_releases_snapshots</name>
-                  <url>http://192.168.9.141:8081/nexus2/content/repositories/my_releases_snapshots</url> 
-            </snapshotRepository> 
-        </distributionmanagement>
+ 
         </profile>
     </profiles>
 </project>
