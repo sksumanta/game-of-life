@@ -493,8 +493,7 @@
                     </plugin>
                 </plugins>
             </reporting>
-        </profile>
-         <distributionmanagement>
+             <distributionmanagement>
             <repository>
                 <id>release</id>
                 <name>my_releases_repo</name>
@@ -506,5 +505,6 @@
                   <url>http://192.168.9.141:8081/nexus2/content/repositories/my_releases_snapshots</url> 
             </snapshotRepository> 
         </distributionmanagement>
+        </profile>
     </profiles>
 </project>
